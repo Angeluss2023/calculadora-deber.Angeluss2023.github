@@ -1,0 +1,20 @@
+<h1>Hola {{name}}!</h1>
+<h2>{{cargo}}</h2>
+<a target="_blank" href="https://angular.io/start">UPS</a>
+<br />
+<div class="input-group">
+  <label for="txtA"> A: </label>
+  <input id="txtA" [(ngModel)]="a" /><br />
+</div>
+<div class="input-group">
+  <label for="txtB"> B: </label>
+  <input id="txtB" [(ngModel)]="b" /><br />
+</div>
+<hr />
+<p class="result">= {{c}}</p>
+<div class="button-group">
+  <button class="btn" (click)="sumar()">Sumar</button>
+  <button class="btn" (click)="restar()">Restar</button>
+  <button class="btn" (click)="multiplicar()">Multiplicar</button>
+  <button class="btn" (click)="dividir()">Dividir</button>
+</div>

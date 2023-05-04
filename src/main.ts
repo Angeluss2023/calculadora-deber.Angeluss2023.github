@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 })
 export class App {
   name = 'Bryam';
-  cargo = 'Docente';
+  cargo = 'Estudiante';
   a = 0;
   b = 0;
   c = 0;

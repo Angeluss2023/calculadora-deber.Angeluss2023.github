@@ -20,4 +20,5 @@
     <button class="btn" (click)="dividir()">Dividir</button>
   </div>
   <app-mensaje [name]="''+c"> </app-mensaje>
+  <app-mensaje (enviarMensaje)="mostrarMensaje($event)"></app-mensaje>
 </div>

@@ -8,12 +8,8 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 })
 export class MensajeComponent implements OnInit {
   @Input() name = 'bryam';
-  @Output() mensajeEnviado = new EventEmitter<string>();
+  @Output() enviarMensaje = new EventEmitter<string>();
 
-  enviarMensaje() {
-    const mensaje = 'Hola desde el componente hijo';
-    this.mensajeEnviado.emit(mensaje);
-  }
   constructor() {}
   ngOnInit() {}
 }

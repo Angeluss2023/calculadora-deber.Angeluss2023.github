@@ -19,7 +19,7 @@ export class App {
   b = 0;
   c = 0;
   contador = 0;
-  mensajeRecibido = '';
+  mensaje = '';
 
   sumar() {
     this.contador++;
@@ -50,8 +50,9 @@ export class App {
     this.contador = this.contador + 1;
     this.c = 0 + this.a + eval('' + this.b);
   }
-  recibirMensaje(mensaje: string) {
-    this.mensajeRecibido = mensaje;
+
+  mostrarMensaje(mensaje: string) {
+    this.mensaje = mensaje;
   }
 }
 

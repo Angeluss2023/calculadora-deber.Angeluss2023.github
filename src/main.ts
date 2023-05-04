@@ -19,6 +19,7 @@ export class App {
   b = 0;
   c = 0;
   contador = 0;
+  mensajeRecibido = '';
 
   sumar() {
     this.contador++;
@@ -48,6 +49,9 @@ export class App {
     console.log('Hola UPS', this.a);
     this.contador = this.contador + 1;
     this.c = 0 + this.a + eval('' + this.b);
+  }
+  recibirMensaje(mensaje: string) {
+    this.mensajeRecibido = mensaje;
   }
 }
 
